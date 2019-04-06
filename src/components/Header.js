@@ -28,7 +28,7 @@ export default class Header extends React.Component {
         return (   
             <Navbar color="transparent" expand="md">
                 <NavbarBrand>
-                    <Link to="/Home"><h3 className="mb-0">Eric Murray</h3></Link>
+                    <h3 className="text-primary mb-0">Eric Murray</h3>
                     <h6 className="text-muted">UI Software Engineer, Aspiring Home Cook</h6>    
                 </NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
