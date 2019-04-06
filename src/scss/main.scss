@@ -1,0 +1,23 @@
+$theme-colors: (
+        "primary": #2289D8,
+        "secondary": #F06522
+);
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    6: ($spacer * 4),      //64px
+    7: ($spacer * 5),      //80px
+    8: ($spacer * 6.25),   //100px
+    9: ($spacer * 7.5),    //120px
+    10: ($spacer * 9.375)  //150px
+  ),
+  $spacers
+);
+
+$enable-gradients: true;
+
+@import '~bootstrap/scss/bootstrap.scss';
+
