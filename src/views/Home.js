@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { Typography, Grid, Paper, Avatar, CardContent } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 
 import headshot from '../sources/headshot.jpg';
 
@@ -18,23 +18,23 @@ class Home extends Component {
                 <Container className="mt-7">
                     <Row>
                         <Col sm="12" md={{ size: 6, offset: 3 }}>
-                            <Typography className="mb-3" variant="h2" align="center">
+                            <Typography variant="h2" align="center" gutterBottom>
                                 About
                             </Typography>
                             <img className="w-100 rounded-circle" src={headshot} alt="Eric Murray" />
-                            <Typography className="mt-2 px-5" variant="caption" align="center">
+                            <Typography className="px-5" variant="caption" align="center" gutterBottom>
                                 Eric on the left, Mason in the middle, Jessica on the right
                             </Typography>
-                            <Typography className="mt-3" variant="subtitle1">
-                                <span className="text-secondary" style={{ fontSize: 20 }}>Hi, I'm Eric.</span> I am a Software 
+                            <Typography variant="subtitle1" gutterBottom>
+                                <span className="text-info" style={{ fontSize: 20 }}>Hi, I'm Eric.</span> I am a Software 
                                 Engineer with more than three years experience working with a 
                                 wide variety of front-end languages and libraries. These languages 
                                 include HTML5, Javascript, and Groovy while libraries include React,
                                 Redux, Material-UI. To see examples of my code. please visit 
                                 my <Link to="/Work">work portfolio page.</Link>           
                             </Typography>
-                            <Typography className="mt-3" variant="headline">
-                                For fun
+                            <Typography variant="subtitle1" gutterBottom>
+                                
                             </Typography>                      
                         </Col>
                     </Row>

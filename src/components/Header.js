@@ -26,12 +26,12 @@ export default class Header extends React.Component {
     }
     render() {
         return (   
-            <Navbar color="transparent" expand="md">
+            <Navbar light expand="md">
                 <NavbarBrand>
                     <h3 className="text-primary mb-0">Eric Murray</h3>
                     <h6 className="text-muted">UI Software Engineer, Aspiring Home Cook</h6>    
                 </NavbarBrand>
-                <NavbarToggler onClick={this.toggle} />
+                <NavbarToggler onClick={this.toggle}/>
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
