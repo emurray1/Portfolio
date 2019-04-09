@@ -19,7 +19,7 @@ export default class siteFooter extends React.Component {
                 <Container>
                     <Row>
                         <Col sm="12" md={{ size: 4 }}>
-                            <Typography className="text-info" variant="h5" align="center" gutterBottom>
+                            <Typography className="text-info mt-3" variant="h5" align="center" gutterBottom>
                                 Say Hello!
                             </Typography>
                             <Form />

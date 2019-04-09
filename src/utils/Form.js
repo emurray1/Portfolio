@@ -21,12 +21,47 @@ class Form extends Component {
         return (
             <form noValidate>
                 <TextField 
-                    id="standard-full-width"
-                    label="name"
-                    name="name"
-                    value={this.state.name}
+                    className="w-100"
+                    id="firstName"
+                    label="First Name"
+                    name="firstName"
+                    value={this.state.firstName}
                     onChange={this.handleChange}
-                />    
+                    margin="normal"
+                    variant="outlined"
+                /> 
+                <TextField 
+                    className="w-100"
+                    id="lastName"
+                    label="Last Name"
+                    name="lastName"
+                    value={this.state.lastName}
+                    onChange={this.handleChange}
+                    margin="normal"
+                    variant="outlined"
+                /> 
+                <TextField 
+                    className="w-100"
+                    id="email"
+                    label="Email"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                    margin="normal"
+                    variant="outlined"
+                />
+                <TextField 
+                    className="w-100"
+                    id="comments"
+                    label="Comments"
+                    name="comments"
+                    multiline
+                    rows="3"
+                    value={this.state.comments}
+                    onChange={this.handleChange}
+                    margin="normal"
+                    variant="outlined"
+                />         
             </form>
         )
     }    
