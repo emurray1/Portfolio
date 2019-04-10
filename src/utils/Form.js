@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import TextField from '@material-ui/core/TextField';
+import { TextField, Button } from '@material-ui/core';
 
 class Form extends Component {
     constructor () {
         super();        
         this.state = {
-            name: '',
+            firstName: '',
+            lastName: '',
             email: '',
-            phone: '',
             multiline: ''
         };
         this.handleChange = this.handleChange.bind(this);  
@@ -16,6 +16,11 @@ class Form extends Component {
     handleChange (e) {
         this.setState({ [e.target.name]: e.target.value });
     };
+
+    handleSubmit (e) {
+        alert('A name was submitted: ' + this.state.firstName);
+        e.preventDefault();
+    }
 
     render() {
         return (
@@ -61,7 +66,10 @@ class Form extends Component {
                     onChange={this.handleChange}
                     margin="normal"
                     variant="outlined"
-                />         
+                />
+                <Button type="submit" variant="outlined" size="large" className="text-primary float-right">
+                    Submit
+                </Button>
             </form>
         )
     }    

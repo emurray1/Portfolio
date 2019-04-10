@@ -7,7 +7,7 @@ class Work extends Component {
     render() {
         return (
             <div className="Work">
-                <Container className="mt-7">
+                <Container className="mt-3">
                     <Row>
                         <Col sm="12" md={{ size: 6, offset: 3 }}>
                             <Typography className="mb-3" variant="h2" align="center">

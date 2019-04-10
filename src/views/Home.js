@@ -15,7 +15,7 @@ class Home extends Component {
     render() {
         return (
             <div className="Home">
-                <Container className="mt-7">
+                <Container className="mt-3">
                     <Row>
                         <Col sm="12" md={{ size: 6, offset: 3 }}>
                             <Typography variant="h2" align="center" gutterBottom>

@@ -9,6 +9,7 @@ import {
     NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import { Typography } from '@material-ui/core';
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -28,10 +29,12 @@ export default class Header extends React.Component {
         return (   
             <Navbar light expand="md">
                 <NavbarBrand>
-                    <h3 className="text-primary mb-0">Eric Murray</h3>
-                    <h6 className="text-muted">UI Software Engineer, Aspiring Home Cook</h6>    
+                    <Typography variant="h4" className="text-primary mb-0 mt-2">
+                        Eric Murray
+                    </Typography>
+                    <Typography variant="body1" className="text-muted">UI Software Engineer, Aspiring Chef</Typography>
                 </NavbarBrand>
-                <NavbarToggler onClick={this.toggle}/>
+                <NavbarToggler onClick={this.toggle} className="mt-2"/>
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
