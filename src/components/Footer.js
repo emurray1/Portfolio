@@ -1,7 +1,6 @@
 import React from 'react';
 import { Nav, 
          NavItem,
-         NavLink,
          Container,
          Row,
          Col } from 'reactstrap';
@@ -39,20 +38,14 @@ export default class siteFooter extends React.Component {
                                 Quick Links
                             </Typography>
                         <Nav vertical align="center">
-                                <NavItem>
-                                    <NavLink>
-                                        <Typography variant="h6" component={Link} to="/Home">Home</Typography>
-                                    </NavLink>
+                                <NavItem className="px-3">
+                                    <Typography variant="h6" component={Link} to="/Home">Home</Typography>
                                 </NavItem>
-                                <NavItem>
-                                    <NavLink>
-                                        <Typography variant="h6" component={Link} to="/About">About</Typography>
-                                    </NavLink>
+                                <NavItem className="px-3">
+                                    <Typography variant="h6" component={Link} to="/About">About</Typography>
                                 </NavItem>
-                                <NavItem>
-                                    <NavLink>
-                                        <Typography variant="h6" component={Link} to="/Work">Work</Typography>
-                                    </NavLink>
+                                <NavItem className="px-3">
+                                    <Typography variant="h6" component={Link} to="/Work">Work</Typography>
                                 </NavItem>
                             </Nav>
                         </Col>

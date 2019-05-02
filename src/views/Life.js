@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
 import { Typography, Paper } from '@material-ui/core';
 import { FormatQuote } from '@material-ui/icons';
 

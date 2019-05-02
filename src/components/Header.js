@@ -5,8 +5,7 @@ import {
     NavbarToggler,
     NavbarBrand,
     Nav,
-    NavItem,
-    NavLink } from 'reactstrap';
+    NavItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import { Typography } from '@material-ui/core';
@@ -36,20 +35,14 @@ export default class Header extends React.Component {
                 <NavbarToggler onClick={this.toggle} className="mt-2"/>
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
-                        <NavItem>
-                            <NavLink>
-                                <Button size="medium" variant="outlined" component={Link} to="/Home">about</Button>
-                            </NavLink>
+                        <NavItem className="px-3">
+                            <Button size="medium" variant="outlined" component={Link} to="/Home">about</Button>
                         </NavItem>
-                        <NavItem>
-                            <NavLink>
-                                <Button size="medium" variant="outlined" component={Link} to="/Work">work</Button>
-                            </NavLink>
+                        <NavItem className="px-3">
+                            <Button size="medium" variant="outlined" component={Link} to="/Work">work</Button>
                         </NavItem>
-                        <NavItem>
-                            <NavLink>
-                                <Button size="medium" variant="outlined" component={Link} to="/Life">Life</Button>
-                            </NavLink>
+                        <NavItem className="px-3">
+                            <Button size="medium" variant="outlined" component={Link} to="/Life">Life</Button>
                         </NavItem>
                     </Nav>
                 </Collapse>                 

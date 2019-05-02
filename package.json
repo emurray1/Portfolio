@@ -7,12 +7,13 @@
     "@material-ui/icons": "^3.0.2",
     "bootstrap": "^4.3.1",
     "i": "^0.3.6",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "npm": "^6.9.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.8",
+    "react-spring": "^8.0.19",
     "reactstrap": "^7.1.0",
     "typeface-roboto": "0.0.54"
   },
@@ -30,5 +31,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "json-loader": "^0.5.7"
+  }
 }
